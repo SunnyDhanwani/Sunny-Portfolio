@@ -572,7 +572,6 @@ html {
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
   background-color: rgba(167, 38, 218, 0.3) !important;
-  cursor: cell;
 }
 .tech-icon-images {
   padding: 20px !important;
