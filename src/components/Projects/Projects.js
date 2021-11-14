@@ -24,7 +24,8 @@ function Projects() {
               isBlog={false}
               title="Bluemercury"
               description="This is a clone of a US based e-commerce website build with HTML, CSS, JS, Express.js, Node.js, and MongoDB. Have features which allows user live search, voice serach."
-              link="https://github.com/kkm980/bluemercury"
+              gitLink="https://github.com/kkm980/bluemercury"
+              liveLink="https://bluemercuryclone.netlify.app/"
             />
           </Col>
 
@@ -34,7 +35,8 @@ function Projects() {
               isBlog={false}
               title="Yatra"
               description="A clone of an India based online travel agency. Built using MERN stack and Meterial UI. User can search flight details and book tickets. The Flight data is fetched from APIs."
-              link="https://github.com/neerajmasai/yatra-clone"
+              gitLink="https://github.com/neerajmasai/yatra-clone"
+              liveLink="https://bluemercuryclone.netlify.app/"
             />
           </Col>
         </Row>
