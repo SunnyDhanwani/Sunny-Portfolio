@@ -36,7 +36,7 @@ function Projects() {
               title="Yatra"
               description="A clone of an India based online travel agency. Built using MERN stack and Meterial UI. User can search flight details and book tickets. The Flight data is fetched from APIs."
               gitLink="https://github.com/neerajmasai/yatra-clone"
-              liveLink="https://bluemercuryclone.netlify.app/"
+              liveLink="https://yatraa.netlify.app/"
             />
           </Col>
         </Row>
