@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import pdf from "../Assets/SunnyDhanwani-Resume.pdf";
+import pdf from "../Assets/SunnyDhanwani_Resume.pdf";
 
 import {
   AiFillStar,
