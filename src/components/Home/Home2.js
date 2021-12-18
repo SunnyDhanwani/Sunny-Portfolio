@@ -21,7 +21,7 @@ function Home2() {
               I'm a
               <b className="purple"> Frontend Web Developer </b> building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <b className="purple"> Projects section. </b>
               <br />
-              <br />I also like sharing content related to the stuff that I have learned over the years in <b className="purple"> Web Development </b> so it can help other people of the Dev Community. Feel free to Connect or Follow me on my <b className="purple"> Linkedin. </b>
+              <br />I also like sharing content related to the stuff that I have learned over the years in <b className="purple"> Web Development </b> so it can help other people of the Dev Community. Feel free to Connect or Follow me on <b className="purple"> Linkedin. </b>
             </p>
           </Col>
           <Col md={4} className="myAvtar">

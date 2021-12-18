@@ -8,14 +8,12 @@ import {
   DiCss3,
   DiNodejsSmall,
   DiGit,
-  DiMysql
+  DiMysql,
 } from "react-icons/di";
-import { SiAdobeillustrator } from "react-icons/si";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-
       <Col xs={4} md={2} className="tech-icons">
         <DiHtml5 />
       </Col>
