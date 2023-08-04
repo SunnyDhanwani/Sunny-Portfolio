@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 // import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import pdf from "../Assets/SunnyDhanwani_Resume.pdf";
+import ReactGA from "react-ga4";
 
 import {
   // AiFillStar,
@@ -63,7 +64,14 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/about"
-                onClick={() => updateExpanded(false)}
+                onClick={() => {
+                  updateExpanded(false);
+                  ReactGA.event({
+                    category: "Button",
+                    action: "Click",
+                    label: "About",
+                  });
+                }}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
@@ -73,7 +81,14 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/project"
-                onClick={() => updateExpanded(false)}
+                onClick={() => {
+                  updateExpanded(false);
+                  ReactGA.event({
+                    category: "Button",
+                    action: "Click",
+                    label: "Projects",
+                  });
+                }}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
@@ -86,8 +101,15 @@ function NavBar() {
               <Nav.Link
                 href={pdf}
                 target="_blank"
+                onClick={() => {
+                  ReactGA.event({
+                    category: "Button",
+                    action: "Click",
+                    label: "Resume",
+                  });
+                }}
               >
-                  <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
 
@@ -100,7 +122,6 @@ function NavBar() {
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
             </Nav.Item> */}
-
           </Nav>
         </Navbar.Collapse>
       </Container>

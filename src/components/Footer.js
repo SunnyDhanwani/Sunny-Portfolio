@@ -1,9 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub, AiFillMail
-} from "react-icons/ai";
+import { AiFillGithub, AiFillMail } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import ReactGA from "react-ga4";
 
 function Footer() {
   let date = new Date();
@@ -23,8 +22,15 @@ function Footer() {
               <a
                 href="https://github.com/SunnyDhanwani"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {
+                  ReactGA.event({
+                    category: "Link",
+                    action: "Click",
+                    label: "Github",
+                  });
+                }}
               >
                 <AiFillGithub />
               </a>
@@ -33,8 +39,15 @@ function Footer() {
               <a
                 href="mailto:dhanwanisunny678@gmail.com"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {
+                  ReactGA.event({
+                    category: "Link",
+                    action: "Click",
+                    label: "Mail",
+                  });
+                }}
               >
                 <AiFillMail />
               </a>
@@ -43,8 +56,15 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/sunny-dhanwani/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {
+                  ReactGA.event({
+                    category: "Link",
+                    action: "Click",
+                    label: "Resume",
+                  });
+                }}
               >
                 <FaLinkedinIn />
               </a>
