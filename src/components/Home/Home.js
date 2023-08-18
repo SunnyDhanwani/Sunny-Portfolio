@@ -14,7 +14,10 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
+                Hi There!{" "}
+                <span className="wave" role="img" aria-labelledby="wave">
+                  👋🏻
+                </span>
               </h1>
 
               <h1 className="heading-name">
@@ -22,8 +25,11 @@ function Home() {
                 <strong className="main-name"> SUNNY DHANWANI</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
+              <div
+                style={{ padding: 50, paddingTop: 20, textAlign: "left" }}
+                className="job-profile"
+              >
+                Frontend Developer at a YC backed startup
               </div>
             </Col>
 

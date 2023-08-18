@@ -80,20 +80,20 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/work"
                 onClick={() => {
                   updateExpanded(false);
                   ReactGA.event({
                     category: "Button",
                     action: "Click",
-                    label: "Projects",
+                    label: "Work",
                   });
                 }}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                Work
               </Nav.Link>
             </Nav.Item>
 

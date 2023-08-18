@@ -21,8 +21,6 @@ import ScrollToTop from "./components/ScrollToTop";
 function App() {
   const [load, upadateLoad] = useState(true);
 
-  console.log(process?.env?.GTM_ID);
-
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
@@ -42,7 +40,7 @@ function App() {
           <ScrollToTop />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/project" component={Projects} />
+            <Route path="/work" component={Projects} />
             <Route path="/about" component={About} />
           </Switch>
           <Footer />
