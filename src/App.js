@@ -26,7 +26,15 @@ function App() {
       upadateLoad(false);
     }, 1200);
 
-    ReactGA.initialize("G-QLL0ZP5SJB");
+    if (!ReactGA._hasLoadedGA) {
+      ReactGA.initialize("G-QLL0ZP5SJB");
+    } else {
+      ReactGA.event({
+        category: "PAGE_VIEW",
+        action: "NEW_PAGE_LOADED",
+        value: window.location.pathname,
+      });
+    }
 
     return () => clearTimeout(timer);
   }, []);

@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-
 import precize from "../../Assets/Projects/precizePreview.jpeg";
 import pazago from "../../Assets/Projects/pazagoPreview.png";
 import propaze from "../../Assets/Projects/propazePreview.png";
@@ -10,6 +9,9 @@ import precizeWebapp from "../../Assets/Projects/precizeWebappPreview.png";
 import pazagoWebapp from "../../Assets/Projects/pazagoWebappPreview.png";
 
 function Projects() {
+  useEffect(() => {
+    document.title = "Sunny Dhanwani | Work";
+  }, []);
   return (
     <Container fluid className="project-section">
       <Particle />

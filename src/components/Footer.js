@@ -26,8 +26,8 @@ function Footer() {
                 rel="noopener noreferrer"
                 onClick={() => {
                   ReactGA.event({
-                    category: "Link",
-                    action: "Click",
+                    category: "FOOTER_LINK",
+                    action: "CLICKED",
                     label: "Github",
                   });
                 }}
@@ -43,8 +43,8 @@ function Footer() {
                 rel="noopener noreferrer"
                 onClick={() => {
                   ReactGA.event({
-                    category: "Link",
-                    action: "Click",
+                    category: "FOOTER_LINK",
+                    action: "CLICKED",
                     label: "Mail",
                   });
                 }}
@@ -60,8 +60,8 @@ function Footer() {
                 rel="noopener noreferrer"
                 onClick={() => {
                   ReactGA.event({
-                    category: "Link",
-                    action: "Click",
+                    category: "FOOTER_LINK",
+                    action: "CLICKED",
                     label: "Resume",
                   });
                 }}

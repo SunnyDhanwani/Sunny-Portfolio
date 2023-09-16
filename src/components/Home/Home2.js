@@ -4,6 +4,8 @@ import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub, AiFillMail } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import ReactGA from "react-ga4";
 
 function Home2() {
   return (
@@ -18,7 +20,19 @@ function Home2() {
               I'm a<b className="purple"> Frontend Web Developer </b> building
               the Front-end of Websites and Web Applications that leads to the
               success of the overall product. Check out some of my work in the{" "}
-              <b className="purple"> Work section. </b>
+              <Link
+                to="/work"
+                className="purple"
+                onClick={() => {
+                  ReactGA.event({
+                    category: "SECTION_LINK",
+                    action: "CLICKED",
+                    label: "Work",
+                  });
+                }}
+              >
+                Work section.
+              </Link>
               <br />
             </p>
           </Col>

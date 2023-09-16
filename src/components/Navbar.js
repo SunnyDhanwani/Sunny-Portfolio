@@ -67,8 +67,8 @@ function NavBar() {
                 onClick={() => {
                   updateExpanded(false);
                   ReactGA.event({
-                    category: "Button",
-                    action: "Click",
+                    category: "NAV_LINK",
+                    action: "CLICKED",
                     label: "About",
                   });
                 }}
@@ -84,8 +84,8 @@ function NavBar() {
                 onClick={() => {
                   updateExpanded(false);
                   ReactGA.event({
-                    category: "Button",
-                    action: "Click",
+                    category: "NAV_LINK",
+                    action: "CLICKED",
                     label: "Work",
                   });
                 }}
@@ -103,8 +103,8 @@ function NavBar() {
                 target="_blank"
                 onClick={() => {
                   ReactGA.event({
-                    category: "Button",
-                    action: "Click",
+                    category: "NAV_LINK",
+                    action: "CLICKED",
                     label: "Resume",
                   });
                 }}
