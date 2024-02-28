@@ -96,10 +96,9 @@ function NavBar() {
                 Work
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
-                href={pdf}
+                href={process.env.REACT_APP_RESUME_DRIVE_LINK}
                 target="_blank"
                 onClick={() => {
                   ReactGA.event({
